@@ -1,0 +1,165 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  transition: background 0.3s, color 0.3s;
+}
+
+#container {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  padding: 2rem;
+  border-radius: 16px;
+  max-width: 350px;
+  width: 90%;
+  text-align: center;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s;
+}
+
+#profile img {
+  width: 112px;
+  height: 112px;
+  border-radius: 50%;
+  margin-bottom: 0.5rem;
+  border: 2px solid #fff;
+}
+
+#profile p {
+  font-weight: 500;
+  color: #ccc;
+  margin-bottom: 1rem;
+}
+
+#switch {
+  margin: 1rem auto;
+  width: 60px;
+  height: 30px;
+  background: #555;
+  border-radius: 15px;
+  position: relative;
+  cursor: pointer;
+}
+
+#switch button {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 24px;
+  height: 24px;
+  background: #fff;
+  border-radius: 50%;
+  border: none;
+  transition: 0.3s;
+}
+
+#switch button.active {
+  left: 33px;
+}
+
+ul {
+  list-style: none;
+  margin: 1.5rem 0;
+}
+
+ul li {
+  margin-bottom: 1rem;
+}
+
+ul li a {
+  display: block;
+  padding: 0.75rem;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #fff;
+  transition: background 0.3s, transform 0.3s, color 0.3s;
+}
+
+ul li a:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: scale(1.05);
+}
+
+#social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+#social-links a {
+  color: #fff;
+  font-size: 1.5rem;
+  transition: color 0.3s;
+}
+
+#social-links a:hover {
+  color: #00bfa5;
+}
+
+footer {
+  font-size: 0.75rem;
+  color: #ccc;
+}
+
+footer a {
+  color: #00bfa5;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* === MODO CLARO === */
+html.light body {
+  background: linear-gradient(135deg, #f5f5f5, #e0e0e0);
+  color: #333;
+}
+
+html.light #container {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+html.light #profile p {
+  color: #555;
+}
+
+html.light ul li a {
+  background: rgba(0, 0, 0, 0.05);
+  color: #333;
+  border: 1px solid #333;
+}
+
+html.light ul li a:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+html.light #social-links a {
+  color: #333;
+}
+
+html.light #social-links a:hover {
+  color: #00796b;
+}
+
+html.light footer {
+  color: #555;
+}
+
+html.light footer a {
+  color: #00796b;
+}
